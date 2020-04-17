@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="false">
-  <test name="DemoTest">
+  <test name="SeleniumDemoTest">
     <classes>
-      <class name="tests.SeleniumDemo"/>
+      <class name="com.demo.example.DemoOne"/>
+      <class name="com.demo.example.DemoTwo"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
