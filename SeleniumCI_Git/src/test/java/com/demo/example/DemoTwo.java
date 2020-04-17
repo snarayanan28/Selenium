@@ -48,14 +48,12 @@ public class DemoTwo {
 			mainMenu.click();
 			// Locate the element by mouse hover to Front-End Testing Automation
 			builder.moveToElement(mainMenu).sendKeys(Keys.DOWN).sendKeys(Keys.DOWN).click().build().perform();
-			//Thread.sleep(2000);
-			
+						
 			// Locate the element by mouse hover to Selenium Tutorial in Java
 			WebElement subMenu = driver.findElement(By.xpath("(//span[text()='Selenium in Java'])[1]"));
 			wait.until(ExpectedConditions.visibilityOf(subMenu));
 			builder.moveToElement(subMenu).click().build().perform();
-			//Thread.sleep(2500);
-			
+						
 			//	Locate elements using LinkText and Partial Link Text
 			WebElement headerEle = driver.findElement(By.xpath("//h1[contains(text(),'Selenium Tutorial')]"));
 			wait.until(ExpectedConditions.visibilityOf(headerEle));
@@ -83,8 +81,7 @@ public class DemoTwo {
 			//To retrieve the value of the specified attribute
 			@SuppressWarnings("unused")
 			String sText = weSearchText.getAttribute("value");
-			System.out.println("Entered value in the Search Textbox is: " +sText);
-			driver.close();
+			System.out.println("Entered value in the Search Textbox is: " +sText);			
 		}
 
 	@AfterClass

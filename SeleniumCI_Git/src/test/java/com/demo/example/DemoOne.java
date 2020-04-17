@@ -45,7 +45,7 @@ public class DemoOne {
 		wChkbox = driver.findElement(By.name("checkBoxOption2"));
 		wChkbox.click();
 		
-		//	Handling multiple window
+		//	Window Handling
 		String parentWndHandle = driver.getWindowHandle();	// Get the current window handle
 		System.out.println("The Parent Win Handle is : " + parentWndHandle);		
 		WebElement openWnd = driver.findElement(By.id("openwindow"));	// Click the button to open a new window
